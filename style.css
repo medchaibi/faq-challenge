@@ -1,0 +1,87 @@
+
+/* - White: hsl(0, 0%, 100%)
+- Light pink: hsl(275, 100%, 97%)
+- Grayish purple: hsl(292, 16%, 49%)
+- Dark purple: hsl(292, 42%, 14%) */
+
+*{
+    font-family: "Work Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color: hsl(275, 100%, 97%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    width: 500px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.logo{
+    display: flex;
+    height: 30px;
+}
+.plus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.questios{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    
+}
+.titles{
+    font-size: 15px;
+    color: hsl(292, 42%, 14%);
+    cursor: pointer ;
+    transition: 0.5s;
+}
+.titles:hover{
+    color: hsl(293, 49%, 67%);
+}
+.sub-titles{
+    font-size: 13px;
+    color: hsl(293, 12%, 42%);
+    font-weight: 700;
+    height: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+.active{
+    opacity: 1;
+}
+hr{
+    border: none;
+    height: 1px;
+    background-color:hsla(292, 9%, 68%, 0.479) ;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+}
+.btn-minus{
+    display: none;
+}
+
+.hide {
+    display: block;
+}
